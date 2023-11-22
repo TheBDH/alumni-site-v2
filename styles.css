@@ -1,0 +1,105 @@
+:root {
+  --dark-color: #444;
+  --white-color: #fff;
+  --main-accent-color: #4e3629;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+h1, h2, p {
+  font-family: 'freight-text-pro', serif;
+}
+
+nav, section, footer {
+  margin: 20px;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav img {
+  height: 75%;
+  padding-right: 30px;
+  order: 0; /* Set the image to be the last element in the row */
+}
+
+nav a, span {
+  text-decoration: none;
+  color: var(--main-accent-color);
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 600px) {
+  nav img {
+    display: none; /* Hide the image on mobile screens */
+  }
+}
+
+
+
+h2 {
+  color: var(--main-accent-color);
+}
+
+blockquote {
+  border-left: 2px solid var(--main-accent-color);
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: var(--dark-color);
+}
+
+
+.hero {
+  height: 80vh; /* Adjust as needed */
+  background-image: url('assets/hero-large.jpeg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color); /* Set text color to be visible on the background */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
