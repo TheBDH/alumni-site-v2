@@ -16,12 +16,17 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-h1, h2, p {
+h1, h2, p, li {
   font-family: 'freight-text-pro', serif;
 }
 
 nav, section, footer {
   margin: 20px;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -102,4 +107,25 @@ footer {
 .hero p {
   font-size: 1.2em;
   margin-bottom: 20px;
+}
+
+.split-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+
+.split-screen{
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .split-wrapper{
+    flex-direction: column;
+  }
+  
+  .split-screen{
+    width: 100%;
+  }
+
 }
